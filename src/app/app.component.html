@@ -1,0 +1,18 @@
+<h1 align="center">Voter Details</h1>
+<table align="center">
+        <tr>Enter the Name    <td><input type="text" [(ngModel)]="c"/></td></tr>
+        <tr>Enter the Age <td> <input type="text" [(ngModel)]="n"/>  </td></tr> 
+         <td> <button (click)="abc()">Sumbit</button></td>
+         <td><button (click)="bd()">Reset</button> </td>                  
+</table>
+<hr>
+<div *ngIf="i; else  l">
+        <h1 align="center">Congrutulation !You eligible for vote</h1> 
+     </div>
+    <ng-template #l>
+       <h1 align="center">So sorry You not eligible for vote</h1>
+    </ng-template>
+<div *ngIf="show" align="center">
+    <h1>All Data Reset Again Entered</h1>
+</div>
+
